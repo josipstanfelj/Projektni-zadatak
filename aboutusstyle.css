@@ -1,0 +1,344 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    margin: 0;
+    padding: 0;
+}
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.selected{
+    background-color: #575757;
+    display: block;
+    
+}
+
+nav {
+    background-color: #313131;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.nav-right{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    
+}
+
+.overlaytext {
+    position:absolute;
+    font-style: italic;
+    top: 6%;
+    right: 30px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-wrap:nowrap;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    height:auto;
+    background-color: #E3DAC9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+section{
+    padding: 1%;  
+    border-radius: 5px;
+    background-color: #e4e0d9;;
+    width: 70%;
+    margin: 10px auto;
+    box-shadow: 0px 10px 20px rgb(77, 76, 76);
+}
+section p{
+    line-height: 1.5; 
+    font-size: 1rem; 
+}
+
+footer {
+    background-color: #313131;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+footer div p {
+    padding: 5px;
+    margin: 0;
+}
+footer p{
+    padding: 5px;
+    margin: 0;
+}
+
+.text1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-block{
+    width: 100%;
+    height: auto;
+    background-color: #E3DAC9;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+    z-index: 110;
+    bottom: 0;
+    border: 2px black;
+    border-color: #575757;
+}
+.newsletter-positioning{
+    position: relative;
+    width: auto;
+    text-align: center;
+    line-height: 35px;
+}
+.newsletter-registration{
+    width: 300px;
+    position: relative;
+    padding: 15px 15px 15px 15px;
+    border: 0;
+    top: 10px;
+    
+  }
+.newsletter-button{
+    position: relative;
+    top: 10px;
+    background-color: #313131;
+    color: #fff; 
+    border-radius: 5px; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+}
+.newsletter-button:hover {
+    background-color: #757474;
+    color: black;
+}
+
+.newsletter-upis:focus{
+    border:0;
+    outline:none;
+}
+.conditions{
+    color: black;
+    position: relative;
+    top: 7px;
+    right: 4.4%;
+} 
+
+.bussines-hours{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E3DAC9;
+}
+.bussines-hours img{
+    max-width: 20%;
+}
+
+.icon{
+    display: block;
+    text-align: center;
+    font-size:25px;
+    padding: auto;
+    margin: 0 auto;
+    color: white;
+}
+.liicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.liicon:hover{
+    background-color: #575757;
+}
+
+.dropdown {
+    display: none;
+    position: relative; 
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+.dropdown li {
+    padding: 0;
+    margin: 0;
+    background-color: #313131;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    color:white;
+}
+
+.dropdown li a:hover {
+    background-color: #575757;
+}
+
+
+.liicon:hover .dropdown {
+    display: block;
+    position:absolute;
+    top: 100%; 
+    
+}
+@media (max-width: 900px) {
+    .newsletter-registration{
+        width: 170px;
+        
+    }
+    nav {
+        background-color: #313131;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        z-index: 1000;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        display: block;
+    }
+    .nav-right{
+        flex-direction: column; 
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul li {
+        width: 100%; 
+        margin: 0;
+    }
+
+    nav ul li a {
+        text-align: center; 
+        padding: 10px;
+    }
+
+    nav ul li div a {
+        text-align: center; 
+        display: block;
+        width: 100%;
+    }
+
+    .overlaytext {
+        font-size: 28px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        text-align: center;
+    }
+    .bussines-hours{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #E3DAC9;
+    }
+    .liicon:hover .dropdown {
+        display: block;
+        position:relative;
+        width: 100%;
+        
+    }
+    .liicon{
+       display: flex;
+       flex-direction: column;
+       justify-content: start;
+       align-items: start;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .icon{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .overlaytext{
+        display: none;
+    }
+
+}
+
+
+
